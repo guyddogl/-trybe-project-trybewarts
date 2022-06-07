@@ -3,7 +3,9 @@ const inputEmail = document.getElementById('email');
 const inputPassword = document.getElementById('password');
 
 function logUserIn() {
-  if (inputEmail.value === 'tryber@teste.com' && inputPassword.value === '123456') {
+  const email = inputEmail.value;
+  const password = inputPassword.value;
+  if (email === 'tryber@teste.com' && password === '123456') {
     alert('Olá, Tryber!');
   } else {
     alert('Email ou senha inválidos.');
