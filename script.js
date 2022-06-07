@@ -1,4 +1,4 @@
-const buttonLogin = document.getElementById('submit-btn');
+const buttonLogin = document.getElementById('submit-login');
 const inputEmail = document.getElementById('email');
 const inputPassword = document.getElementById('password');
 
