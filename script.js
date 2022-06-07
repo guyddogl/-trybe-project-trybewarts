@@ -3,6 +3,8 @@ const inputEmail = document.getElementById('email');
 const inputPassword = document.getElementById('password');
 const checkAgreement = document.getElementById('agreement');
 const buttonEnviar = document.getElementById('submit-btn');
+const textarea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
 
 // Requisito 3
 function logUserIn() {
@@ -27,3 +29,12 @@ function agreement() {
 }
 
 checkAgreement.addEventListener('click', agreement);
+
+// Requisito 20
+function countLength(event) {
+  const textLength = 500 - event.target.textLength;
+  counter.innerText = textLength;
+}
+
+textarea.addEventListener('keyup', countLength);
+textarea.addEventListener('keydown', countLength);
