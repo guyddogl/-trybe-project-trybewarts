@@ -25,7 +25,7 @@
         <input class="input-warts" type="text" id="input-name" placeholder="Nome">
         <input class="input-warts" type="text" id="input-lastname" placeholder="Sobrenome">
       </div>
-      <div>
+      <div class="form-row">
         <input class="input-warts" type="email" id="input-email" placeholder="Email">
         <select name="house" id="house">
           <option id="gitnoria-house" value="Gitnória">Gitnória</option>
@@ -34,69 +34,73 @@
           <option id="pytherina-house" value="Pytherina">Pytherina</option>
         </select>
       </div>
-      <div>
-        <label id="label-family" for="">Qual sua família?</label>
-        <div>
-          <input type="radio" name="family" value="Frontend"> 
-          <label for="family">Frontend</label>
+      <hr>
+      <div class="form-row">
+        <div class="form-column">
+          <label id="label-family" for="">Qual sua família?</label>
+          <div>
+            <input class="radio-warts" type="radio" name="family" value="Frontend"> 
+            <label for="family">Frontend</label>
+          </div>
+          <div>
+            <input class="radio-warts" type="radio" name="family" value="Backend"> 
+            <label for="">Backend</label>
+          </div>
+          <div>
+            <input class="radio-warts" type="radio" name="family" value="FullStack"> 
+            <label for="family">FullStack</label>
+          </div>
         </div>
-        <div>
-          <input type="radio" name="family" value="Backend"> 
-          <label for="">Backend</label>
-        </div>
-        <div>
-          <input type="radio" name="family" value="FullStack"> 
-          <label for="family">FullStack</label>
+        <div class="form-column">
+          <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
+          <div>
+            <input class="checkbox-warts" type="checkbox" class="subject" value="HoFs">
+            <label for="HoFs">HoFs</label>
+          </div>
+          <div>
+            <input class="checkbox-warts" type="checkbox" class="subject" value="Jest">
+            <label for="Jest">Jest</label>
+          </div>
+          <div>
+            <input class="checkbox-warts" type="checkbox" class="subject" value="Promises">
+            <label for="Promises">Promises</label>
+          </div>
+          <div>
+            <input class="checkbox-warts" type="checkbox" class="subject" value="React">
+            <label for="React">React</label>
+          </div>
+          <div>
+            <input class="checkbox-warts" type="checkbox" class="subject" value="SQL">
+            <label for="SQL">SQL</label>
+          </div>
+          <div>
+            <input class="checkbox-warts" type="checkbox" class="subject" value="Python">
+            <label for="Python">Python</label>
+          </div>
         </div>
       </div>
-      <div>
-        <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-        <div>
-          <input type="checkbox" class="subject" value="HoFs">
-          <label for="HoFs">HoFs</label>
-        </div>
-        <div>
-          <input type="checkbox" class="subject" value="Jest">
-          <label for="Jest">Jest</label>
-        </div>
-        <div>
-          <input type="checkbox" class="subject" value="Promises">
-          <label for="Promises">Promises</label>
-        </div>
-        <div>
-          <input type="checkbox" class="subject" value="React">
-          <label for="React">React</label>
-        </div>
-        <div>
-          <input type="checkbox" class="subject" value="SQL">
-          <label for="SQL">SQL</label>
-        </div>
-        <div>
-          <input type="checkbox" class="subject" value="Python">
-          <label for="Python">Python</label>
-        </div>
-      </div>
+
       <div>
         <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
-          <input type="radio" name="rate" value="1"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="1"> 
           <label for="1">1</label>
-          <input type="radio" name="rate" value="2"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="2"> 
           <label for="2">2</label>
-          <input type="radio" name="rate" value="3"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="3"> 
           <label for="3">3</label>
-          <input type="radio" name="rate" value="4"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="4"> 
           <label for="4">4</label>
-          <input type="radio" name="rate" value="5"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="5"> 
           <label for="5">5</label>
-          <input type="radio" name="rate" value="6"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="6"> 
           <label for="6">6</label>
-          <input type="radio" name="rate" value="7"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="7"> 
           <label for="7">7</label>
-          <input type="radio" name="rate" value="8"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="8"> 
           <label for="8">8</label>
-          <input type="radio" name="rate" value="9"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="9"> 
           <label for="9">9</label>
-          <input type="radio" name="rate" value="10"> 
+          <input class="checkbox-warts" type="radio" name="rate" value="10"> 
           <label for="10">10</label>
       </div>  
       <div>

@@ -96,3 +96,21 @@ main {
 #trybewarts-forms-logo {
   height: 500px;
 }
+
+select {
+  border-radius: 4px;
+  height: 40px;
+  width: 250px;
+  border: 1px solid rgb(50, 167, 145);
+  background-color: white;
+  cursor: pointer;
+}
+
+.radio-warts , .checkbox-warts {
+  accent-color: green;
+}
+
+hr {
+  border: 1px solid rgb(239, 239, 239);
+  width: 85%;
+}
