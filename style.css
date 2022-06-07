@@ -49,6 +49,21 @@ input[type=text]:focus, input[type="password"]:focus {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.button-login {
+  padding: 10px 30px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: #4e2c83;
+  transition: 0.5s ease;
+}
+
+.button-login:hover {
+  background-color: #8976c5;
+  cursor: pointer;
+}
+
 main {
   display: flex;
   padding: 20px;
