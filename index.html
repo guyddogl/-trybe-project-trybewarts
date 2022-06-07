@@ -52,35 +52,42 @@
           </div>
         </div>
         <div class="form-column">
-          <label id="label-content" for="">Qual conteúdo você está com mais vontade de aprender?</label>
-          <div>
-            <input class="checkbox-warts" type="checkbox" class="subject" value="HoFs">
-            <label for="HoFs">HoFs</label>
-          </div>
-          <div>
-            <input class="checkbox-warts" type="checkbox" class="subject" value="Jest">
-            <label for="Jest">Jest</label>
-          </div>
-          <div>
-            <input class="checkbox-warts" type="checkbox" class="subject" value="Promises">
-            <label for="Promises">Promises</label>
-          </div>
-          <div>
-            <input class="checkbox-warts" type="checkbox" class="subject" value="React">
-            <label for="React">React</label>
-          </div>
-          <div>
-            <input class="checkbox-warts" type="checkbox" class="subject" value="SQL">
-            <label for="SQL">SQL</label>
-          </div>
-          <div>
-            <input class="checkbox-warts" type="checkbox" class="subject" value="Python">
-            <label for="Python">Python</label>
+          <label id="label-content" for="">Qual conteúdo você está com mais vontade <br/>de aprender?</label>
+          <div class="form-row">
+            <div class="form-column">
+              <div>
+                <input class="checkbox-warts" type="checkbox" class="subject" value="HoFs">
+                <label for="HoFs">HoFs</label>
+              </div>
+              <div>
+                <input class="checkbox-warts" type="checkbox" class="subject" value="Jest">
+                <label for="Jest">Jest</label>
+              </div>
+              <div>
+                <input class="checkbox-warts" type="checkbox" class="subject" value="Promises">
+                <label for="Promises">Promises</label>
+              </div>
+            </div>
+            <div class="form-column">
+              <div>
+                <input class="checkbox-warts" type="checkbox" class="subject" value="React">
+                <label for="React">React</label>
+              </div>
+              <div>
+                <input class="checkbox-warts" type="checkbox" class="subject" value="SQL">
+                <label for="SQL">SQL</label>
+              </div>
+              <div>
+                <input class="checkbox-warts" type="checkbox" class="subject" value="Python">
+                <label for="Python">Python</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <hr>
       <div class="form-row">
-        <label id="label-rate" for="">Como você avalia a Trybewarts?</label>
+        <label id="label-rate" for="">Como você avalia <br/>a Trybewarts?</label>
           <input class="checkbox-warts" type="radio" name="rate" value="1"> 
           <label for="1">1</label>
           <input class="checkbox-warts" type="radio" name="rate" value="2"> 
@@ -109,12 +116,12 @@
           <span id="counter">500</span>
         </div>
       </div>
-      <div>
-        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+      <div class="form-row">
         <input type="checkbox" name="agreement" id="agreement">
+        <label id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
       </div>
-      <div>
-        <button type="submit" id="submit-btn" disabled>Enviar</button>
+      <div class="form-row">
+        <button type="submit" id="submit-btn" class="button-enviar btn-disable" disabled>Enviar</button>
       </div>
     </form>
     <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Trybewarts Logo">

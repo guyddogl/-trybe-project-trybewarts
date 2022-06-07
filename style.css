@@ -134,3 +134,46 @@ textarea:focus {
 .comment {
   width: 90%;
 }
+
+.button-enviar {
+  padding: 10px 30px;
+  border-radius: 4px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  background-color: rgb(50, 167, 145);
+  transition: 0.5s ease;
+}
+
+.button-enviar:hover {
+  background-color: #8976c5;
+  cursor: pointer;
+}
+
+.btn-disable {
+  background-color: rgb(50, 167, 145, 0.5);
+}
+
+.btn-disable:hover {
+  background-color: rgb(50, 167, 145, 0.5);
+  cursor: auto;
+}
+
+ footer {
+   display: flex;
+   margin-top: 40px;
+   width: 100%;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   background-color: #bbb;
+   height: 50px;
+ }
+
+ #counter {
+   user-select: none;
+   color: rgb(50, 167, 145);
+   font-size: 15px;
+ }
+ 
