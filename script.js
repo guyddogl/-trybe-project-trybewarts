@@ -37,4 +37,3 @@ function countLength(event) {
 }
 
 textarea.addEventListener('keyup', countLength);
-textarea.addEventListener('keydown', countLength);
