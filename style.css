@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Blaka&display=swap') ;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap') ;
 
 * {
@@ -6,7 +5,7 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .header {
@@ -15,7 +14,7 @@
   height: 80px;
   padding: 10px;
   justify-content: space-between;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
 #trybewarts-header-title {
@@ -24,7 +23,6 @@
   text-align: center;
   align-self: center;
   text-shadow: 2px 2px 1px black;
-  /* font-family: 'Blaka', cursive; */
 }
 
 .trybewarts-login {
@@ -35,18 +33,18 @@
   gap: 10px;
 }
 
-input[type="email"], input[type="text"], input[type="password"] {
+.input-warts {
   border-radius: 4px;
   height: 40px;
   width: 250px;
   border: 1px solid rgb(50, 167, 145);
-  padding: 5px 5px;
+  padding: 5px;
   outline: none;
 }
 
-input[type=text]:focus, input[type="password"]:focus {
+.input-warts:focus {
   border: 2px solid rgb(50, 167, 145);
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
 }
 
 .button-login {
@@ -55,12 +53,12 @@ input[type=text]:focus, input[type="password"]:focus {
   font-size: 18px;
   font-weight: 700;
   color: white;
-  background-color: #4e2c83;
+  background-color: rgb(78, 44, 131);
   transition: 0.5s ease;
 }
 
 .button-login:hover {
-  background-color: #8976c5;
+  background-color: rgb(137, 118, 197);
   cursor: pointer;
 }
 
@@ -75,6 +73,24 @@ main {
   display: flex;
   width: 675px;
   flex-direction: column;
+  gap: 15px;
+  text-align: start;
+  align-items: center;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-around;
+  width: 85%;
+  flex-flow: row wrap;
+}
+
+.form-column {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  gap: 10px;
 }
 
 #trybewarts-forms-logo {
