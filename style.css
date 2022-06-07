@@ -35,6 +35,20 @@
   gap: 10px;
 }
 
+input[type="email"], input[type="text"], input[type="password"] {
+  border-radius: 4px;
+  height: 40px;
+  width: 250px;
+  border: 1px solid rgb(50, 167, 145);
+  padding: 5px 5px;
+  outline: none;
+}
+
+input[type=text]:focus, input[type="password"]:focus {
+  border: 2px solid rgb(50, 167, 145);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 main {
   display: flex;
   padding: 20px;
