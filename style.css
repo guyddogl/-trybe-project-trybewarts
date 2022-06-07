@@ -10,14 +10,32 @@
   background-color: rgb(50, 167, 145);
   height: 80px;
   padding: 10px;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#trybewarts-header-title {
+  color: white;
+  font-size: 56px;
+  text-align: center;
+  align-self: center;
+  text-shadow: 2px 2px 1px black;
+  /* font-family: 'Blaka', cursive; */
 }
 
 .trybewarts-login {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 10px;
 }
 
 main {
   display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 #evaluation-form {
