@@ -10,10 +10,10 @@ const inputLastName = document.getElementById('input-lastname');
 const inputFormEmail = document.getElementById('input-email');
 const house = document.getElementById('house');
 const family = document.getElementsByName('family');
-const main = document.getElementById('main');
 const checkBoxSkills = document.getElementsByClassName('subject');
 const checkBoxRate = document.getElementsByName('rate');
 const evaluationForm = document.getElementById('evaluation-form');
+const formData = document.getElementById('form-data');
 
 // Requisito 3
 function logUserIn() {
@@ -59,17 +59,13 @@ function selectedFamily() {
 }
 
 function checkedSkills() {
-  let skills = '';
+  const skills = [];
   for (let index = 0; index < checkBoxSkills.length; index += 1) {
     if (checkBoxSkills[index].checked === true) {
-      if (skills != '') {
-        skills = `${skills}, ${checkBoxSkills[index].value}`;
-      } else {
-        skills = `${checkBoxSkills[index].value}`;
-      }
+      skills.push(checkBoxSkills[index].value);
     }
   }
-  return skills;
+  return skills.join(', ');
 }
 
 function selectedRate() {
@@ -80,18 +76,23 @@ function selectedRate() {
   }
 }
 
-function sendForm() {
-  const name = inputName.value;
-  const lastName = inputLastName.value;
-  const email = inputFormEmail.value;
-  const selectFamily = selectedFamily();
-  const selectSkills = checkedSkills();
-  const selectRate = selectedRate();
+function sendForm(event) {
+  event.preventDefault();
+  const formObject = {
+    Nome: `${inputName.value} ${inputLastName.value}`,
+    Email: inputFormEmail.value,
+    Casa: house.value,
+    Família: selectedFamily(),
+    Matérias: checkedSkills(),
+    Avaliação: selectedRate(),
+    Observações: textarea.value,
+  };
   evaluationForm.style.display = 'none';
-  const newForm = document.createElement('form');
-  newForm.setAttribute('id', 'form-data');
-  main.appendChild(newForm);
-  newForm.innerText = `Nome: ${name} ${lastName} Email: ${email} Casa: ${house.value} Família: ${selectFamily} Matérias: ${selectSkills} Avaliação: ${selectRate} Observações: ${textarea.value}`;
+  const arrayForm = [];
+  for (let index = 0; index < Object.keys(formObject).length; index += 1) {
+    arrayForm.push(`${Object.keys(formObject)[index]}: ${Object.values(formObject)[index]}`);
+  }
+  formData.innerText = arrayForm.join(' ');
 }
 
 buttonEnviar.addEventListener('click', sendForm);
