@@ -65,23 +65,16 @@ const selectedRate = () => {
   }
 };
 
-function sendForm(event) {
-  event.preventDefault();
-  const formObject = {
-    Nome: `${inputName.value} ${inputLastName.value}`,
-    Email: inputFormEmail.value,
-    Casa: house.value,
-    Família: selectedFamily(),
-    Matérias: checkedSkills(),
-    Avaliação: selectedRate(),
-    Observações: textarea.value,
-  };
+const sendForm = (e) => {
+  e.preventDefault();
   evaluationForm.style.display = 'none';
-  const arrayForm = [];
-  for (let index = 0; index < Object.keys(formObject).length; index += 1) {
-    arrayForm.push(`${Object.keys(formObject)[index]}: ${Object.values(formObject)[index]}`);
-  }
-  formData.innerText = arrayForm.join(' ');
-}
+  formData.innerText = `Nome: ${inputName.value} ${inputLastName.value}
+  Email: ${inputFormEmail.value}
+  Casa: ${house.value}
+  Família: ${selectedFamily()}
+  Matérias: ${checkedSkills()}
+  Avaliação: ${selectedRate()}
+  Observações: ${textarea.value}`;
+};
 
 buttonEnviar.addEventListener('click', sendForm);
