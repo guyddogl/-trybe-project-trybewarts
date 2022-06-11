@@ -59,13 +59,11 @@ const checkedSkills = () => {
   return skills.join(', ');
 };
 
-function selectedRate() {
+const selectedRate = () => {
   for (let index = 0; index < checkBoxRate.length; index += 1) {
-    if (checkBoxRate[index].checked === true) {
-      return checkBoxRate[index].value;
-    }
+    if (checkBoxRate[index].checked === true) return checkBoxRate[index].value;
   }
-}
+};
 
 function sendForm(event) {
   event.preventDefault();
