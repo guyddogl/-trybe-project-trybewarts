@@ -16,15 +16,10 @@ const evaluationForm = document.getElementById('evaluation-form');
 const formData = document.getElementById('form-data');
 
 // Requisito 3
-function logUserIn() {
-  const email = inputEmail.value;
-  const password = inputPassword.value;
-  if (email === 'tryber@teste.com' && password === '123456') {
-    alert('Olá, Tryber!');
-  } else {
-    alert('Email ou senha inválidos.');
-  }
-}
+const logUserIn = () => {
+  const logIn = inputEmail.value === 'tryber@teste.com' && inputPassword.value === '123456';
+  return logIn ? alert('Olá, Tryber!') : alert('Email ou senha inválidos.');
+};
 
 buttonLogin.addEventListener('click', logUserIn);
 
