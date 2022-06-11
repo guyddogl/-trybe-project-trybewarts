@@ -51,15 +51,13 @@ const selectedFamily = () => {
   }
 };
 
-function checkedSkills() {
+const checkedSkills = () => {
   const skills = [];
   for (let index = 0; index < checkBoxSkills.length; index += 1) {
-    if (checkBoxSkills[index].checked === true) {
-      skills.push(checkBoxSkills[index].value);
-    }
+    if (checkBoxSkills[index].checked === true) skills.push(checkBoxSkills[index].value);
   }
   return skills.join(', ');
-}
+};
 
 function selectedRate() {
   for (let index = 0; index < checkBoxRate.length; index += 1) {
