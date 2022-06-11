@@ -45,13 +45,11 @@ const countLength = (e) => {
 textarea.addEventListener('keyup', countLength);
 
 // Requisito 21
-function selectedFamily() {
+const selectedFamily = () => {
   for (let index = 0; index < family.length; index += 1) {
-    if (family[index].checked === true) {
-      return family[index].value;
-    }
+    if (family[index].checked === true) return family[index].value;
   }
-}
+};
 
 function checkedSkills() {
   const skills = [];
