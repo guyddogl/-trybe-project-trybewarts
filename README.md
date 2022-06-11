@@ -7,7 +7,7 @@ O objetivo deste projeto era criar um formulário de avaliação.
 
 Pontos importantes:
 - O botão submit só pode ser habilitado se o checkbox estiver marcado
-- O textarea possui um contador com um limite de caracters que vai se decrementado a medida que o texto é digitado
+- O textarea possui um contador com um limite de caracteres que é decrementado a medida que o texto é digitado
 
 ### Tecnologias principais
 ![HTML](https://img.shields.io/badge/-HTML-1b374b?style=for-the-badge&logo=HTML5)&nbsp;
