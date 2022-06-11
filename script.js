@@ -24,7 +24,7 @@ const logUserIn = () => {
 buttonLogin.addEventListener('click', logUserIn);
 
 // Requisito 18
-function agreement() {
+const agreement = () => {
   if (checkAgreement.checked === true) {
     buttonEnviar.removeAttribute('disabled');
     buttonEnviar.classList.toggle('btn-disable');
@@ -32,7 +32,7 @@ function agreement() {
     buttonEnviar.setAttribute('disabled', 'disabled');
     buttonEnviar.classList.toggle('btn-disable');
   }
-}
+};
 
 checkAgreement.addEventListener('click', agreement);
 
