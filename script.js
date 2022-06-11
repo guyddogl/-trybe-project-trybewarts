@@ -37,10 +37,10 @@ const agreement = () => {
 checkAgreement.addEventListener('click', agreement);
 
 // Requisito 20
-function countLength(event) {
-  const textLength = 500 - event.target.textLength;
+const countLength = (e) => {
+  const textLength = 500 - e.target.textLength;
   counter.innerText = textLength;
-}
+};
 
 textarea.addEventListener('keyup', countLength);
 
